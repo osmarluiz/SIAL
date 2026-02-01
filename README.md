@@ -10,7 +10,7 @@ SIAL enables training high-quality segmentation models with extremely sparse sup
 
 ### Framework
 
-![Framework](figs/framework.png)
+![Framework](assets/framework.png)
 
 The iterative cycle:
 1. **Annotate**: Add one point per class per image (sparse supervision)
@@ -21,7 +21,7 @@ The iterative cycle:
 
 ### Annotation Software
 
-![Software Interface](figs/software.png)
+![Software Interface](assets/software.png)
 
 The annotation tool displays:
 - RGB image with prediction overlay
@@ -100,16 +100,17 @@ Please include your name, affiliation, and intended use.
 ```
 SIAL/
 ├── active_learning_notebook.ipynb  # Main workflow
-├── src/
-│   ├── annotation/      # Annotation launcher
-│   ├── datasets/        # Dataset classes
-│   ├── losses/          # EWDL implementation
-│   ├── session/         # Session management
-│   ├── training/        # Training workflows
-│   └── utils/           # Utilities
-├── configs/             # Dataset and training configs
-├── annotation_interface/  # PyQt5 annotation tool
-└── segmentation_models_pytorch/  # SMP with modifications
+├── configs/                        # Dataset and training configs
+├── assets/                         # Images for documentation
+└── src/
+    ├── annotation/                 # Annotation launcher
+    ├── annotation_interface/       # PyQt5 annotation tool
+    ├── datasets/                   # Dataset classes
+    ├── losses/                     # EWDL implementation
+    ├── segmentation_models_pytorch/ # SMP with modifications
+    ├── session/                    # Session management
+    ├── training/                   # Training workflows
+    └── utils/                      # Utilities
 ```
 
 ## License
