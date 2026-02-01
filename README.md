@@ -112,18 +112,6 @@ SIAL/
 └── segmentation_models_pytorch/  # SMP with modifications
 ```
 
-## Citation
-
-```bibtex
-@article{carvalho2025sial,
-  title={Sparse Annotation Framework for Semantic Segmentation via Iterative Active Learning},
-  author={Carvalho, Osmar L. F. and others},
-  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-  year={2025},
-  note={Under Review}
-}
-```
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
