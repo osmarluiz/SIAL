@@ -1,0 +1,46 @@
+# BSB 256x256 Dataset Configuration
+# Multi-iteration active learning with full validation set
+
+name: BSB_256
+type: semantic_segmentation
+
+paths:
+  train_images: DATASETS/BSB_256/image_train
+  train_dense_masks: DATASETS/BSB_256/mask_train
+  train_sparse_masks: DATASETS/BSB_256/iteration_0
+  val_images: DATASETS/BSB_256/image_val
+  val_masks: DATASETS/BSB_256/mask_val
+  test_images: null
+  test_masks: null
+
+image:
+  height: 256
+  width: 256
+  channels: 3
+  format: tiff
+
+normalization:
+  mean: [0.3886, 0.3943, 0.3281]
+  std: [0.2250, 0.1881, 0.1834]
+
+classes:
+  num_classes: 5
+  ignore_index: 5
+  names:
+    - background
+    - car
+    - road
+    - building
+    - permeable_area
+  colors:
+    - [0, 0, 0]        # background - black
+    - [255, 255, 0]    # car - yellow
+    - [128, 128, 128]  # road - gray
+    - [0, 0, 255]      # building - blue
+    - [0, 255, 0]      # permeable_area - green
+
+augmentation:
+  enabled: true
+  horizontal_flip: true
+  vertical_flip: true
+  rotation: 0
